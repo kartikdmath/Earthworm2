@@ -1,0 +1,27 @@
+{% extends 'Jai_Kisan/base1.html' %}
+{% load static %}
+
+{% block main-content %}
+
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Orders</h5>
+          
+          <a href="{% url 'booked-change-status' %}" class="btn btn-primary">Click to view Orders</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Product Listings</h5>
+          
+          <a href="{% url 'vender-add-product' %}" class="btn btn-primary">click to List the Products</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock main-content %}
